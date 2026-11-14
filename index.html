@@ -241,6 +241,11 @@ body>footer{max-width:1080px;margin:12px auto 0;padding:18px 40px 26px}@media(ma
     clearIdle();
     quiet = reduced.matches;
     state = 'running';
+    window.goatcounter?.count?.({
+      path: 'desk-dash-start',
+      title: 'Desk Dash started',
+      event: true
+    });
     button.classList.add('is-running');
     celebration?.cancel();
     last = performance.now();
@@ -259,4 +264,7 @@ body>footer{max-width:1080px;margin:12px auto 0;padding:18px 40px 26px}@media(ma
 })();
 </script>
 
+<script async src="https://gc.zgo.at/count.js"
+  data-goatcounter="https://deema-alnuhait.goatcounter.com/count"
+  data-goatcounter-settings='{"allow_local":false}'></script>
 </body></html>
